@@ -26,3 +26,12 @@ class STREAMLITTEXT:
 
     Deze combinatie van tijdreeksen en verdelingsstatistieken biedt een genuanceerd beeld van de Nederlandse brandstofmarkt en laat zien waar, wanneer en bij welk type pomp prijsverschillen ontstaan.
     """
+
+    PRIJZEN_SAMENVATTING_COMMENT = """
+    Een opvallend verschil tussen premium- en budgettankstations is de relatie tussen het gemiddelde en de mediaan.
+    Bij budgetpompen liggen deze twee waarden dicht bij elkaar, wat wijst op een relatief smalle prijsverdeling en een consistente prijszetting.
+
+    Bij premiumtankstations ligt het gemiddelde structureel hoger dan de mediaan. Dit suggereert een grotere spreiding in prijzen, waarbij hogere prijzen of uitschieters het gemiddelde sterker beïnvloeden.
+
+    Door zowel het gemiddelde als de mediaan te tonen, wordt zichtbaar dat prijsverschillen tussen pomptypes niet alleen in het niveau zitten, maar ook in de verdeling en stabiliteit van prijzen.
+    """

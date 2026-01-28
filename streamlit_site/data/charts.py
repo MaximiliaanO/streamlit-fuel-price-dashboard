@@ -44,6 +44,51 @@ class StreamlitCharts():
         )
         return chart
     
+    def avg_median(self, f_type: str, min_scale:float, max_scale:float):
+        dta = self.db.database_query(DB_QUERIES.MEDIAN_PRICE_QUERY(f'{f_type.lower()}'))
+        df = pd.DataFrame(dta, columns=['Datum', 'Pomp type', 'Gemiddelde', 'Mediaan'])
+        scale = [min_scale, max_scale]
+
+        df_long = df.melt(
+            id_vars=["Datum", "Pomp type"],
+            value_vars=["Gemiddelde", "Mediaan"],
+            var_name="Statistiek",
+            value_name="Prijs"
+        )
+
+        chart = alt.Chart(df_long).mark_line().encode(
+            x=alt.X("Datum:T", title="Datum"),
+            y=alt.Y(
+                "Prijs:Q",
+                title="Prijs (€)",
+                axis=alt.Axis(format=".3f"),
+                scale=alt.Scale(domain=scale)
+            ),
+            color=alt.Color(
+                "Pomp type:N",
+                title="Pomp type",
+                scale=alt.Scale(
+                    domain=["premium", "budget"],
+                    range=["#8ecae6", "#219ebc"]
+                )
+            ),
+            strokeDash=alt.StrokeDash(
+                "Statistiek:N",
+                title="Statistiek",
+                scale=alt.Scale(
+                    domain=["Gemiddelde", "Mediaan"],
+                    range=[[1, 0], [4, 4]]  # solid vs dashed
+                )
+            ),
+            tooltip=[
+                alt.Tooltip("Datum:T", title="Datum"),
+                alt.Tooltip("Pomp type:N", title="Pomp type"),
+                alt.Tooltip("Statistiek:N", title="Statistiek"),
+                alt.Tooltip("Prijs:Q", title="Prijs (€)", format=".3f")
+            ]
+        )
+        return st.altair_chart(chart, use_container_width=True)
+
     def type_chart(self):
         dta = self.db.database_query(DB_QUERIES.PUMP_TYPE_QUERY)
         clean = [data for tpl in dta for data in tpl if data != None]

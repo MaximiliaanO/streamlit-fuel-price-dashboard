@@ -5,3 +5,4 @@ __pycache__
 streamlit_site/__pycache__
 streamlit_site/data/__pycache__
 streamlit_site/text_pages/__pycache__
+test.py
