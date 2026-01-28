@@ -1,12 +1,12 @@
 import streamlit as st
-from charts import StreamlitCharts
-from text import STREAMLITTEXT
+from data.charts import StreamlitCharts
+from text_pages.text import STREAMLITTEXT
 
 # Chart instance
 charts = StreamlitCharts()
 
-# Webapp
-st.title("Ontwikkeling van brandstof prijzen in Nederland.")
+# Webapp - Benzineprijzen
+st.title("Ontwikkeling van benzine prijzen in Nederland.")
 st.markdown(body=STREAMLITTEXT.INTRO)
 st.divider()
 
@@ -21,4 +21,4 @@ with st.container(border=True):
     st.subheader("Benzine prijzen bij premium tankstations:")
     st.altair_chart(charts.prem_gas_chart(), use_container_width=True) # To change to premium gasstations.
 
-st.markdown(body=STREAMLITTEXT.GAS_COMMENT)
+st.markdown(body=STREAMLITTEXT.FUEL_COMMENT)
