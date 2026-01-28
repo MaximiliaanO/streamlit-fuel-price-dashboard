@@ -1,13 +1,12 @@
 import streamlit as st
 from data.charts import StreamlitCharts
-from text_pages.text import STREAMLITTEXT
+from content_text.text import STREAMLITTEXT
 
 # Chart instance
 charts = StreamlitCharts()
 
 # Webapp - Benzineprijzen
 st.title("Ontwikkeling van diesel prijzen in Nederland.")
-st.markdown(body=STREAMLITTEXT.INTRO)
 st.divider()
 
 st.header("Gemiddelde, minimale en maximale diesel prijs per soort tankstation", divider=None)

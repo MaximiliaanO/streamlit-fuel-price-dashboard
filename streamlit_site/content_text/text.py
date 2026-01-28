@@ -1,6 +1,6 @@
 class STREAMLITTEXT:
     #Intro text in markdown
-    INTRO = """
+    PRICES_INTRO = """
     Op deze website presenteer ik de resultaten van mijn end-to-end datapipeline. 
     Deze datapipeline scraped elke dag de brandstofprijzen van een landelijke operator in brandstoffen.
     De data pipeline kun je hier vinden [Github](https://github.com/MaximiliaanO/Data-Pipeline---Fuel-Prices).
@@ -11,8 +11,9 @@ class STREAMLITTEXT:
     Dit komt doordat de overheid de accijns op brandstoffen vanaf die datum heeft [verhoogd](https://nos.nl/artikel/2596842-accijns-op-benzine-omhoog-en-er-volgt-meer-wennen-aan-2-50-per-liter).
     '''
 
-    MAIN_INTRO = """
+    INTRODUCTIEPAGE_INTRO = """
     Op deze website presenteer ik een analyse van Nederlandse brandstofprijzen op basis van dagelijks verzamelde prijsdata van tankstations door het hele land.
+    De data pipeline kun je hier vinden [Github](https://github.com/MaximiliaanO/Data-Pipeline---Fuel-Prices).
 
     De focus ligt op het inzichtelijk maken van **prijsontwikkelingen door de tijd** en de **verschillen tussen premium- en budgettankstations**.
     Voor zowel **benzine** als **diesel** worden de dagelijkse **minimum-, gemiddelde- en maximumprijzen** weergegeven.

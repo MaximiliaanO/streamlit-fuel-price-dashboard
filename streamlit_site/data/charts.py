@@ -14,8 +14,8 @@ class StreamlitCharts():
     def min_max_avg_chart(self, f_type: str, p_type: str, min_scale:float, max_scale:float):
         # Budget branstofpompen dataframe & chart benzine
         dta = self.db.database_query(DB_QUERIES.price_query(fuel_type=f"{f_type}", pump_type=f"{p_type}"))
-        df = pd.DataFrame(dta, columns=("Datum", "minimum price", "average price", "maximum price"))
-        price_cols = ["minimum price", "average price", "maximum price"]
+        df = pd.DataFrame(dta, columns=("Datum", "Minimum", "Gemiddelde", "Maximum"))
+        price_cols = ["Minimum", "Gemiddelde", "Maximum"]
         scale = [min_scale, max_scale]
 
         # Chart

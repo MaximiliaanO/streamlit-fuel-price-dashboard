@@ -1,6 +1,6 @@
 import streamlit as st
 from data.charts import StreamlitCharts
-from text_pages.text import STREAMLITTEXT
+from content_text.text import STREAMLITTEXT
 
 #border
 bord = True
@@ -10,7 +10,6 @@ charts = StreamlitCharts()
 
 # Webapp - Benzineprijzen
 st.title("Ontwikkeling van benzine prijzen in Nederland.")
-st.markdown(body=STREAMLITTEXT.INTRO)
 st.divider()
 
 
@@ -29,11 +28,5 @@ with st.container(border=bord):
 st.markdown(body=STREAMLITTEXT.FUEL_COMMENT)
 
 st.divider()
-st.space()
 
-st.header("Gemiddelde en mediaan benzineprijzen per soort tankstation:")
-
-with st.container(border=bord):
-    #st.subheader("Gemiddelde en mediaan benzineprijzen per soort tankstation:")
-    charts.avg_median(f_type='benzine')
 
