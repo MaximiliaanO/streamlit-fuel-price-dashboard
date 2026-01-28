@@ -20,7 +20,7 @@ class PostgresHandler ():
         except Exception as e:
             print(f"An error ocurred the conneciton could not be established.\nError: {e}")
 
-    def get_price_data_gas(self, query):
+    def database_query(self, query):
         self.cursor.execute(query)
         result = self.cursor.fetchall()
         return result

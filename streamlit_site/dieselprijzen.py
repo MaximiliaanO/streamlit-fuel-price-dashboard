@@ -6,7 +6,7 @@ from text_pages.text import STREAMLITTEXT
 charts = StreamlitCharts()
 
 # Webapp - Benzineprijzen
-st.title("Ontwikkeling van diesl prijzen in Nederland.")
+st.title("Ontwikkeling van diesel prijzen in Nederland.")
 st.markdown(body=STREAMLITTEXT.INTRO)
 st.divider()
 
