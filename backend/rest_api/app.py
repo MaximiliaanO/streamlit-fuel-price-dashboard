@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from database.database import PostgresHandler
-from database.db_queries import DB_QUERIES
+from backend.rest_api.database.database import PostgresHandler
+from backend.rest_api.database.db_queries import DB_QUERIES
 
 db = PostgresHandler()
 db.initialize_conn()
