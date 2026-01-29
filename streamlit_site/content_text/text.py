@@ -36,3 +36,22 @@ class STREAMLITTEXT:
 
     Door zowel het gemiddelde als de mediaan te tonen, wordt zichtbaar dat prijsverschillen tussen pomptypes niet alleen in het niveau zitten, maar ook in de verdeling en stabiliteit van prijzen.
     """
+
+    HOMEPAGETEXT = """
+    ## 👋 Welkom op oorschot.tech
+
+    **Ik help organisaties AI en software écht laten werken in hun dagelijkse processen.**
+
+    Veel bedrijven willen “iets met AI”, maar lopen vast in de vertaalslag van idee naar praktijk. Ik sla de brug tussen business, data en techniek. Met een achtergrond in finance en controlling én sterke technische vaardigheden in softwareontwikkeling en data-engineering, ontwerp en bouw ik oplossingen die niet alleen technisch kloppen, maar ook passen binnen de manier waarop organisaties werken.
+
+    Mijn aanpak is praktisch en stapsgewijs. Ik start vaak met het vergroten van AI-geletterdheid binnen teams, breng daarna processen in kaart waar automatisering of AI waarde toevoegt, en realiseer vervolgens concrete oplossingen. Denk aan het automatiseren van documentstromen, het ondersteunen van planning en besluitvorming, of het bouwen van slimme workflows waarin AI wordt geïntegreerd.
+
+    Ik werk met technologieën als Python, SQL, JavaScript/TypeScript en React, en combineer maatwerkontwikkeling met bestaande tools om snel resultaat te leveren. Mijn focus ligt altijd op oplossingen die tijd besparen, kwaliteit verhogen en medewerkers ondersteunen in plaats van vervangen.
+
+    Wat mij onderscheidt is de combinatie van procesinzicht, analytisch vermogen en technische uitvoering. Ik begrijp hoe organisaties beslissingen nemen, hoe data door processen stroomt en hoe technologie daarin een betrouwbare rol kan spelen.
+
+    **AI is voor mij geen doel op zich, maar gereedschap om werk slimmer, duidelijker en efficiënter te maken.**
+
+    LinkedIn: [https://www.linkedin.com/in/maxoorschot/](https://www.linkedin.com/in/maxoorschot/) Github: [https://github.com/MaximiliaanO/](https://github.com/MaximiliaanO/)
+
+    """
