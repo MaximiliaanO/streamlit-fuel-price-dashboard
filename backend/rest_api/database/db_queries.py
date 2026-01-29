@@ -1,5 +1,5 @@
 class DB_QUERIES:
-    def price_query(fuel_type, pump_type):
+    def price_query(fuel_type: str, pump_type: str):
         PRICE_QUERY = f"""
         WITH daily_prices AS(
             SELECT
@@ -34,7 +34,7 @@ class DB_QUERIES:
             """
         return PRICE_QUERY
     
-    def MEDIAN_PRICE_QUERY(fuel_type):
+    def MEDIAN_PRICE_QUERY(fuel_type: str):
         QUERY = f"""
         WITH daily_prices AS(
             SELECT
