@@ -17,4 +17,8 @@ COPY . .
 EXPOSE 8501
 
 # 7. Start Streamlit
+<<<<<<< HEAD
 CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
+=======
+CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+>>>>>>> 5dd5f953494d6a8b985fdfc819f8b5dcd46fd154
