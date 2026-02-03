@@ -9,7 +9,7 @@ app = FastAPI(debug=True)
 
 @app.get("/")
 def root():
-    return {"message": "Hello, World!"}
+    return {"status": "OK"}
 
 @app.get("/price-query")
 def price_query(fuel_type : str, pump_type :str):
