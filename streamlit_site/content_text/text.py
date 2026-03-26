@@ -7,8 +7,12 @@ class STREAMLITTEXT:
     """
 
     FUEL_COMMENT = '''
-    In beide grafieken zien we per 1 januari 2026 een forse stijging in de brandstofprijzen.
-    Dit komt doordat de overheid de accijns op brandstoffen vanaf die datum heeft [verhoogd](https://nos.nl/artikel/2596842-accijns-op-benzine-omhoog-en-er-volgt-meer-wennen-aan-2-50-per-liter).
+    Vanaf begin maart 2026 vertoonden de brandstofprijzen een scherpe opwaartse trend, waarbij de benzineprijs op 17 maart een nieuw record van € 2,508 per liter bereikte.
+    Deze stijging werd primair gedreven door geëscaleerde geopolitieke spanningen in het Midden-Oosten, met name de blokkade van de strategische Straat van Hormuz. 
+    Dit leidde tot acute schaarste op de oliemarkt en dreef de prijs voor een vat Brent-olie op naar circa $ 102. 
+    De onzekerheid over de aanvoer en de verhoogde transportkosten zorgden voor een directe doorberekening aan de Nederlandse pomp.
+
+    De dieselprijs steeg relatief sneller dan benzine (met een record van € 2,519 op 10 maart) door de grote afhankelijkheid van import en de aanhoudende hoge vraag vanuit de transportsector.
     '''
 
     INTRODUCTIEPAGE_INTRO = """

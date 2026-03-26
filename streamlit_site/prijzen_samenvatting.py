@@ -1,12 +1,17 @@
 import streamlit as st
+import os
 from data.charts import StreamlitCharts
 from content_text.text import STREAMLITTEXT
+from dotenv import load_dotenv
+from pathlib import Path
+
+load_dotenv(Path(".env/.env"))
 
 charts = StreamlitCharts()
 
 bord = True
-benzine_scale = [1.85, 2.10] # minimum, maximum
-diesel_scale = [1.60, 1.90] # minimum, maximum
+benzine_scale = [os.getenv("SUMM_MIN_B"), os.getenv("SUMM_MAX_B")] # minimum, maximum
+diesel_scale = [os.getenv("SUMM_MIN_D"), os.getenv("SUMM_MAX_D")] # minimum, maximum
 
 st.header("Gemiddelde en mediaan brandstofprijzen per soort tankstation:")
 with st.container(border=bord):
