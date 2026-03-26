@@ -11,6 +11,7 @@ def fetch_min_max_avg_data(fuel_type :str, pump_type: str):
         base_url = os.getenv("API_LOC")
         endpoint = f"price-query?fuel_type={fuel_type.lower()}&pump_type={pump_type.lower()}"
         url = base_url + endpoint
+        print(f'url is: {url}')
         res = requests.get(url=url)
         res.raise_for_status()
         dta = res.json()
